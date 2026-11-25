@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RCTGames</title>
+<meta name="description" content="RCTGames makes mobile games for Android: Getaway '78, Drift and My Hometown.">
+<style>
+  :root { --bg: #17131f; --card: #221c2e; --line: #3a3149; --ink: #f4eee3; --dim: #b9aec9; --hot: #f9a03f; --link: #ffd27a; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f6f1e7; --card: #ffffff; --line: #e1d8c8; --ink: #2a2233; --dim: #5f556d; --hot: #c2600a; --link: #9a4a00; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 56px; }
+  h1 { margin: 0; font-size: clamp(34px, 8vw, 52px); letter-spacing: .5px; line-height: 1.1; }
+  h1 span { color: var(--hot); }
+  .lead { margin: 10px 0 34px; color: var(--dim); font-size: 19px; }
+  .games { display: grid; gap: 16px; }
+  .game { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  .game h2 { margin: 0 0 4px; font-size: 22px; }
+  .game p { margin: 0 0 12px; color: var(--dim); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; }
+  a { color: var(--link); }
+  a.play { display: inline-block; padding: 8px 16px; border-radius: 999px; background: var(--hot); color: #1b1220; font-weight: 700; text-decoration: none; }
+  a.play:hover, a.play:focus-visible { filter: brightness(1.1); }
+  .soon { display: inline-block; padding: 7px 14px; border-radius: 999px; border: 1px dashed var(--line); color: var(--dim); font-weight: 600; }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--dim); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>RCT<span>Games</span></h1>
+  <p class="lead">Mobile games for Android.</p>
+
+  <div class="games">
+    <section class="game">
+      <h2>Getaway '78</h2>
+      <p>A 1970s getaway-driving game. Take jobs, outrun the police and build a garage of muscle cars across three cities.</p>
+      <div class="links">
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.rct.getaway78">Get it on Google Play</a>
+        <a href="https://claude.ai/artifact/G4JCmANvaH3y4haR8rmoCg">Privacy policy</a>
+      </div>
+    </section>
+
+    <section class="game">
+      <h2>Drift — Calm Flow Puzzles</h2>
+      <p>A calm puzzle game to play at your own pace.</p>
+      <div class="links">
+        <a class="play" href="https://play.google.com/store/apps/details?id=com.rct.drift">Get it on Google Play</a>
+      </div>
+    </section>
+
+    <section class="game">
+      <h2>My Hometown: Match &amp; Build</h2>
+      <p>A match-3 puzzle game about rebuilding a small desert town, one place at a time.</p>
+      <div class="links">
+        <span class="soon">Coming soon to Google Play</span>
+        <a href="https://sites.google.com/view/myhometownprivacypolicy">Privacy policy</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    Questions about a game? Use the developer contact on its Google Play page.<br>
+    &copy; 2026 RCTGames
+  </footer>
+</main>
+</body>
+</html>
